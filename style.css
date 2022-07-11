@@ -1,0 +1,31 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  background-color: rgb(214, 214, 214);
+  width: 400px;
+  height: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.line-wobble {
+  background-color: rgb(5, 195, 192);
+  height: 10px;
+  width: 100px;
+  overflow: hidden;
+  border-radius: 10px;
+  animation: loading 3s infinite ease-out;
+}
+
+@keyframes loading {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(300%);
+  }
+}
