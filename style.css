@@ -18,14 +18,17 @@ body {
   width: 100px;
   overflow: hidden;
   border-radius: 10px;
-  animation: loading 3s infinite ease-out;
+  animation: loading 4s infinite ease-out;
 }
 
 @keyframes loading {
   0% {
-    transform: translateX(0);
+    transform: translateX(-50%);
   }
   50% {
-    transform: translateX(300%);
+    transform: translateX(350%);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }
